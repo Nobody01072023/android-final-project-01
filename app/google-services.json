@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "246509751589",
+    "project_id": "pizza-pulse",
+    "storage_bucket": "pizza-pulse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246509751589:android:a8e9ac37a4e37188aa9ecc",
+        "android_client_info": {
+          "package_name": "com.example.pizzapulse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDndWrJeluVo6vPYrLzRccZmxEOYBCCTKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
