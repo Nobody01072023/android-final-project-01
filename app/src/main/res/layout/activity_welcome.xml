@@ -4,33 +4,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/ulala">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to PizzaPulse"
-        android:textSize="24sp"
-        android:layout_marginBottom="32dp"/>
-
+        android:textColor="@color/teal_200" android:textSize="30sp" android:layout_marginBottom="32dp"/>
     <Button
         android:id="@+id/menuButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Menu"
-        android:layout_marginBottom="16dp"/>
+        android:text="Menu"  android:textColor="@color/teal_200"
+android:backgroundTint="#9A112747" android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/addressButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Addresses"
-        android:layout_marginBottom="16dp"/>
+        android:text="Addresses"   android:textColor="@color/teal_200"
+        android:backgroundTint="#9A112747"        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/orderButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Orders"/>
-
+        android:backgroundTint="#9A112747"        android:text="Orders"
+    android:textColor="@color/teal_200"/>
 </LinearLayout>

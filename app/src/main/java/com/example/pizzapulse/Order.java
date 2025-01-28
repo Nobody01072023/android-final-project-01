@@ -1,4 +1,7 @@
 package com.example.pizzapulse;
+
+import java.util.List;
+
 public class Order {
 
     private int id;
@@ -11,6 +14,9 @@ public class Order {
         this.userId = userId;
         this.itemId = itemId;
         this.quantity = quantity;
+    }
+
+    public Order(String orderId, List<String> items, double totalPrice, String orderDate) {
     }
 
     public int getId() {
@@ -27,5 +33,21 @@ public class Order {
 
     public int getQuantity() {
         return quantity;
+    }
+
+    public String getTotalPrice() {
+        return null;
+    }
+
+    public String getOrderId() {
+        return null;
+    }
+
+    public CharSequence getItems() {
+        return null;
+    }
+
+    public String getOrderDate() {
+        return null;
     }
 }

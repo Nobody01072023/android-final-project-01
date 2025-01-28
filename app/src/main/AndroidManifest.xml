@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- Registered Activities -->
+        <activity
+            android:name=".OrderPlacement"
+            android:exported="false" />
+
+        <activity
+            android:name=".OrderHistoryActivity"
+            android:exported="false" />
+
         <activity
             android:name=".ViewAddressListActivity"
             android:exported="false" />
@@ -32,7 +42,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- Other activities -->

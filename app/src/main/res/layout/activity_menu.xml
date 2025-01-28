@@ -1,29 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center">
+    android:background="@drawable/www">>
 
-    <Button
-        android:id="@+id/addMenuItemButton"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Menu Item"
-        android:layout_marginBottom="16dp"/>
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    <Button
-        android:id="@+id/viewMenuListButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="View Menu List"/>
+        <!-- Select Food Items -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Food Items:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
-    <!-- ListView to display menu items (hidden initially) -->
-    <ListView
-        android:id="@+id/menuListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"/>
+        <CheckBox
+            android:id="@+id/chk_margherita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Margherita Pizza"
+            android:textColor="#000000" />
 
-</LinearLayout>
+        <CheckBox
+            android:id="@+id/chk_pepperoni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pepperoni Pizza"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/chk_bbq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BBQ Chicken Pizza"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/chk_veggie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veggie Pizza"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txt_selected_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:paddingTop="10dp" />
+
+        <!-- Select Drink -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Drink:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingTop="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_drinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_coke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coke"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radio_juice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juice"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radio_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <!-- Quantity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Sub" />
+
+            <TextView
+                android:id="@+id/txt_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:backgroundTint="@color/black"/>
+
+
+        </LinearLayout>
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price (BDT 200 each): BDT 200"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:paddingTop="10dp" />
+
+        <!-- Rating -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Us"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingTop="10dp" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:outlineAmbientShadowColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/txt_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: 0.0"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:paddingTop="5dp" />
+
+        <!-- Order Button -->
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:backgroundTint="@color/black"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</ScrollView>
